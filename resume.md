@@ -58,6 +58,6 @@ Abel Solutions, Inc | Jan 1998 – Apr 2001
 
 ## Elsewhere
 - My [@tangentstorm](https://www.youtube.com/@tangentstorm) channel on YouTube is for infrequent, highly edited programming essays.
-- I also live-stream unedited coding sessions on a second channel: [@tangentstream](https://www.youtube.com/@tangentstream)
+- I also live-stream unedited coding sessions on a second channel: [@tangentstream](https://www.youtube.com/@tangentstream).
 - I was a [guest on the ArrayCast podcast](https://www.arraycast.com/episodes/episode40-michal-wallace) in Nov 2022.
 - I am [@tangentstorm](https://x.com/tangentstorm) on X.
