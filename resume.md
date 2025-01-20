@@ -1,4 +1,4 @@
-# Michal J. wallace<br>
+# Michal J. Wallace<br>
 > Email: michal.wallace@gmail.com | Phone: (678) 812-9126<br>
 > Website: [tangentstorm.com](http://tangentstorm.com) | GitHub: [@tangentstorm](https://github.com/tangentstorm)<br>
 > Location: Long Island, NY
@@ -21,39 +21,34 @@ Tangentcode/Minneron, LLC | Jan 2024 – Present
 - Built an innovative document/graph database atop SQLite.
 - Preparing to launch an audio-enabled outliner, which you can try at [make.minneron.com](https://make.minneron.com/).
 
-
 **Senior Software Development Engineer**<br>
 1010data | May 2016 – Jan 2024
 
-- Full stack development with K and javascript.
+- Full stack development with K and JavaScript.
 - Created a user-extensible API for developing applications on our platform.
 
 **Small Business Owner / Lead Developer**<br>
-Sabren Enterprises, Inc | APR 2001 – May 2016
+Sabren Enterprises, Inc | Apr 2001 – May 2016
 
-- Ran a small web hosting company. Wrote an early python web framework and one of the world’s first blog aggregators.
-- Fought against spammers and helped countless nice people with
-their email.
+- Ran a small web hosting company. Wrote an early Python web framework and one of the world’s first blog aggregators.
+- Fought against spammers and helped countless nice people with their email.
 
 **Freelance Software Developer**<br>
 Various Clients | Apr 2001 – May 2016
 
 - Wrote Java and XSLT so radio stations could sell ad time.
 - Built WordPress and Drupal plugins for internet marketing millionaires.
-- Made apps with Android and google app engine.
-- Mantained a desktop publishing tool for school yearbooks in AngularJS.
+- Made apps with Android and Google App Engine.
+- Maintained a desktop publishing tool for school yearbooks in AngularJS.
 
 **Senior Developer**<br>
 Abel Solutions, Inc | Jan 1998 – Apr 2001
 
-- Consultant for Fortune 500 companies (Siemens, Nextel, Coca-Cola), NGOs (CARE) and US state
-governments (Georgia and South Dakota).
-- Interviewed stakeholders to gather requirements, then
-designed and built intranet and web solutions with Microsoft VBScript and ASP.
+- Consultant for Fortune 500 companies (Siemens, Nextel, Coca-Cola), NGOs (CARE) and US state governments (Georgia and South Dakota).
+- Interviewed stakeholders to gather requirements, then designed and built intranet and web solutions with Microsoft VBScript and ASP.
 
 **Previously**<br>
-> *Self-taught programmer since middle school. Quality assurance internship. Two years Art and Performance + Cognitive Science at UT Dallas. Taught children to read for AmeriCorps. Trainer
-for medical practice management software.*
+> *Self-taught programmer since middle school. Quality assurance internship. Two years Art and Performance + Cognitive Science at UT Dallas. Taught children to read for AmeriCorps. Trainer for medical practice management software.*
 
 ## Selected Open Source Projects
 - [bex](https://github.com/tangentstorm/bex): a rust crate for manipulating and solving large boolean expressions.
@@ -62,7 +57,7 @@ for medical practice management software.*
 - [pileUp](https://github.com/tangentstorm/pileup): a note-taking system with a novel drag-and-drop-ui, built with d3.js, python, and couchdb.
 
 ## Elsewhere
-- My [@tangentstorm](https://www.youtube.com/@tangentstorm) channel on youtube is for infrequent, highly edited programming essays.
+- My [@tangentstorm](https://www.youtube.com/@tangentstorm) channel on YouTube is for infrequent, highly edited programming essays.
 - I also live-stream unedited coding sessions on a second channel: [@tangentstream](https://www.youtube.com/@tangentstream)
 - I was a [guest on the ArrayCast podcast](https://www.arraycast.com/episodes/episode40-michal-wallace) in Nov 2022.
 - I am [@tangentstorm](https://x.com/tangentstorm) on X.
