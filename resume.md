@@ -1,63 +1,54 @@
 # Michal J. Wallace<br>
 > Email: michal.wallace@gmail.com | Phone: (678) 812-9126<br>
 > Website: [tangentstorm.com](http://tangentstorm.com) | GitHub: [@tangentstorm](https://github.com/tangentstorm)<br>
-> Location: Long Island, NY
+> Location: Hicksville, NY · Remote
 
 ## Summary
 
-Principal Software Engineer with over 20 years of experience in web and backend development, specializing in Python, JavaScript, and Rust. Proven track record in leading teams, designing scalable architectures, and developing innovative solutions. Adept at creating user-extensible APIs and full-stack applications. Passionate about continuous learning and staying ahead of industry trends.
+Principal / senior engineering leader with 20+ years building web, backend, and AI-integrated systems. Recently led LLM features for a data analysis platform (MCP server, key-usage proxy, natural-language querying) and now shipping voiceover/animation tools plus AI agent workflows as founder of Minneron. Strengths in Python, JavaScript/TypeScript, Rust, and array languages (K/J/APL).
 
 ## Technical Skills
-- **Programming Languages:** Python, JavaScript/TypeScript, Rust, Smalltalk, Dart/Flutter, SQL, Godot, Array languages (J/K/APL)
-- **Web:** Vue.js, jQuery, D3.js, Node.js, React, HTMX, Web Components
-- **Databases:** PostgreSQL, MySQL, SQLite, CouchDB
-- **Other:** API design, Agile methodologies, Test-driven development
+- **Languages:** Python, JavaScript/TypeScript, Rust, K, SQL, Smalltalk, Dart/Flutter
+- **Web & APIs:** Vue.js, React, Node.js, HTMX, MCP / LLM tooling, API design
+- **Data:** PostgreSQL, MySQL, SQLite, CouchDB
+- **Practices:** TDD, Agile, scalable architecture, developer platforms
 
 ## Professional Experience
 
-**Founder & Principal Engineer**<br>
-Tangentcode/Minneron, LLC | Jan 2024 – Present
+**Founder**<br>
+Minneron LLC | Jan 2024 – Present · Hicksville, NY (Remote)
 
-- Built an innovative document/graph database atop SQLite.
-- Preparing to launch an audio-enabled outliner, which you can try at [make.minneron.com](https://make.minneron.com/).
+- Building voiceover and animation software for video creators ([make.minneron.com](https://make.minneron.com/), [minavo.app](https://minavo.app)).
+- Running a swarm of AI agents to formalize mathematical papers.
+- AI-related consulting projects alongside product work.
+
+**Senior Director, Software Development**<br>
+Symphony AI | Jun 2025 – Aug 2026 · Remote
+
+- Added natural-language support via LLMs to the company’s data analysis platform.
+- Built an MCP server so LLMs can integrate with that platform.
+- Built a proxy to share and monitor AI API key usage.
 
 **Senior Software Development Engineer**<br>
-1010data | May 2016 – Jan 2024
+1010data | May 2016 – Jan 2024 · NYC Metro (Hybrid)
 
-- Full stack development with K and JavaScript.
-- Created a user-extensible API for developing applications on our platform.
+- Full-stack web and API development with K, Python, JavaScript, and in-house languages.
+- Created a user-extensible API for building applications on the platform.
 
-**Small Business Owner / Lead Developer**<br>
-Sabren Enterprises, Inc | Apr 2001 – May 2016
+**Software Engineer (Contract)**<br>
+Balfour | Jan 2016 – May 2016 · Dallas, TX
 
-- Ran a small web hosting company. Wrote an early Python web framework and one of the world’s first blog aggregators.
-- Fought against spammers and helped countless nice people with their email.
+- Desktop publishing for school yearbooks in Flask (Python) and AngularJS.
 
-**Freelance Software Developer**<br>
-Various Clients | Apr 2001 – May 2016
+**Small Business Owner / Freelance Developer**<br>
+Cornerhost (Sabren Enterprises, Inc.) | Nov 2001 – May 2016 · Atlanta Metro
 
-- Wrote Java and XSLT so radio stations could sell ad time.
-- Built WordPress and Drupal plugins for internet marketing millionaires.
-- Made apps with Android and Google App Engine.
-- Maintained a desktop publishing tool for school yearbooks in AngularJS.
-
-**Senior Developer**<br>
-Abel Solutions, Inc | Jan 1998 – Apr 2001
-
-- Consultant for Fortune 500 companies (Siemens, Nextel, Coca-Cola), NGOs (CARE) and US state governments (Georgia and South Dakota).
-- Interviewed stakeholders to gather requirements, then designed and built intranet and web solutions with Microsoft VBScript and ASP.
+- Ran a web hosting company end-to-end (control panel, billing, monitoring) mostly in Python.
+- Side contracts across Python, Perl, PHP, and Java (WordPress/Drupal, Android/App Engine, radio ad tooling).
 
 **Previously**<br>
-> *Self-taught programmer since middle school. Quality assurance internship. Two years Art and Performance + Cognitive Science at UT Dallas. Taught children to read for AmeriCorps. Trainer for medical practice management software.*
+> *Developer/Manager at StomperNet (Drupal/WordPress, Flash video library; introduced VCS and bug tracking). Java/XP developer at Media Ocean (TV ad negotiation + EJB↔DHTML messaging). Lead developer/analyst at Abel Solutions (Fortune 500 / NGO / state govt intranet apps). Trainer/developer at Nuesoft; QA analyst at First Command. Self-taught since middle school; AmeriCorps literacy tutor; UT Dallas Art & Performance + Cognitive Science.*
 
-## Selected Open Source Projects
-- [bex](https://github.com/tangentstorm/bex): a rust crate for manipulating and solving large boolean expressions.
-- [jprez](https://github.com/tangentstorm/jprez): a presentation tool for recording REPL interactions for video presentations and synchronizing them with audio recordings for voiceover.
-- [b4](https://github.com/tangentstorm/b4): a small virtual machine implemented in multiple languages, with a self-hosted assembler.
-- [pileUp](https://github.com/tangentstorm/pileup): a note-taking system with a novel drag-and-drop-ui, built with d3.js, python, and couchdb.
-
-## Elsewhere
-- My [@tangentstorm](https://www.youtube.com/@tangentstorm) channel on YouTube is for infrequent, highly edited programming essays.
-- I also live-stream unedited coding sessions on a second channel: [@tangentstream](https://www.youtube.com/@tangentstream).
-- I was a [guest on the ArrayCast podcast](https://www.arraycast.com/episodes/episode40-michal-wallace) in Nov 2022.
-- I am [@tangentstorm](https://x.com/tangentstorm) on X.
+## Selected Open Source & Elsewhere
+- [bex](https://github.com/tangentstorm/bex) · [jprez](https://github.com/tangentstorm/jprez) · [b4](https://github.com/tangentstorm/b4) · [pileUp](https://github.com/tangentstorm/pileup)
+- YouTube [@tangentstorm](https://www.youtube.com/@tangentstorm) / [@tangentstream](https://www.youtube.com/@tangentstream) · [ArrayCast guest](https://www.arraycast.com/episodes/episode40-michal-wallace) (Nov 2022) · [@tangentstorm](https://x.com/tangentstorm) on X
