@@ -1,0 +1,99 @@
+name: Michal J. Wallace
+email: michal.wallace@gmail.com
+phone: "(678) 812-9126"
+website: tangentstorm.com
+website_url: http://tangentstorm.com
+github: tangentstorm
+location: Hicksville, NY · Remote
+
+summary: >
+  Principal / senior engineering leader with 20+ years building web, backend,
+  and AI-integrated systems. Recently led LLM features for a data analysis
+  platform (MCP server, key-usage proxy, natural-language querying) and now
+  shipping voiceover/animation tools plus AI agent workflows as founder of
+  Minneron. Strengths in Python, JavaScript/TypeScript, Rust, and array
+  languages (K/J/APL).
+
+skills:
+  - label: Languages
+    items: Python, JavaScript/TypeScript, Rust, K, SQL, Smalltalk, Dart/Flutter
+  - label: Web & APIs
+    items: Vue.js, React, Node.js, HTMX, MCP / LLM tooling, API design
+  - label: Data
+    items: PostgreSQL, MySQL, SQLite, CouchDB
+  - label: Practices
+    items: TDD, Agile, scalable architecture, developer platforms
+
+experience:
+  - role: Founder
+    org: Minneron LLC
+    location: Hicksville, NY (Remote)
+    dates: Jan 2024 – Present
+    bullets:
+      - Building voiceover and animation software for video creators.
+      - Running a swarm of AI agents to formalize mathematical papers.
+      - AI-related consulting projects alongside product work.
+    links:
+      - label: make.minneron.com
+        url: https://make.minneron.com/
+      - label: minavo.app
+        url: https://minavo.app
+
+  - role: Senior Director, Software Development
+    org: Symphony AI
+    location: Remote
+    dates: Jun 2025 – Aug 2026
+    bullets:
+      - Added natural-language support via LLMs to the company’s data analysis platform.
+      - Built an MCP server so LLMs can integrate with that platform.
+      - Built a proxy to share and monitor AI API key usage.
+
+  - role: Senior Software Development Engineer
+    org: 1010data
+    location: NYC Metro (Hybrid)
+    dates: May 2016 – Jan 2024
+    bullets:
+      - Full-stack web and API development with K, Python, JavaScript, and in-house languages.
+      - Created a user-extensible API for building applications on the platform.
+
+  - role: Software Engineer (Contract)
+    org: Balfour
+    location: Dallas, TX
+    dates: Jan 2016 – May 2016
+    bullets:
+      - Desktop publishing for school yearbooks in Flask (Python) and AngularJS.
+
+  - role: Small Business Owner / Freelance Developer
+    org: Cornerhost (Sabren Enterprises, Inc.)
+    location: Atlanta Metro
+    dates: Nov 2001 – May 2016
+    bullets:
+      - Ran a web hosting company end-to-end (control panel, billing, monitoring) mostly in Python.
+      - Side contracts across Python, Perl, PHP, and Java (WordPress/Drupal, Android/App Engine, radio ad tooling).
+
+previously: >
+  Developer/Manager at StomperNet (Drupal/WordPress, Flash video library; introduced VCS and bug tracking).
+  Java/XP developer at Media Ocean (TV ad negotiation + EJB↔DHTML messaging).
+  Lead developer/analyst at Abel Solutions (Fortune 500 / NGO / state govt intranet apps).
+  Trainer/developer at Nuesoft; QA analyst at First Command.
+  Self-taught since middle school; AmeriCorps literacy tutor; UT Dallas Art & Performance + Cognitive Science.
+
+opensource:
+  - label: bex
+    url: https://github.com/tangentstorm/bex
+  - label: jprez
+    url: https://github.com/tangentstorm/jprez
+  - label: b4
+    url: https://github.com/tangentstorm/b4
+  - label: pileUp
+    url: https://github.com/tangentstorm/pileup
+
+elsewhere:
+  - label: "@tangentstorm (YouTube)"
+    url: https://www.youtube.com/@tangentstorm
+  - label: "@tangentstream"
+    url: https://www.youtube.com/@tangentstream
+  - label: ArrayCast guest (Nov 2022)
+    url: https://www.arraycast.com/episodes/episode40-michal-wallace
+  - label: "@tangentstorm on X"
+    url: https://x.com/tangentstorm
