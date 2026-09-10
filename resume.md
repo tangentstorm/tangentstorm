@@ -1,3 +1,5 @@
+<!-- Generated from resume.yaml — edit the YAML, then run: python3 build.py -->
+
 # Michal J. Wallace<br>
 > Email: michal.wallace@gmail.com | Phone: (678) 812-9126<br>
 > Website: [tangentstorm.com](http://tangentstorm.com) | GitHub: [@tangentstorm](https://github.com/tangentstorm)<br>
@@ -18,7 +20,7 @@ Principal / senior engineering leader with 20+ years building web, backend, and 
 **Founder**<br>
 Minneron LLC | Jan 2024 – Present · Hicksville, NY (Remote)
 
-- Building voiceover and animation software for video creators ([make.minneron.com](https://make.minneron.com/), [minavo.app](https://minavo.app)).
+- Building voiceover and animation software for video creators.
 - Running a swarm of AI agents to formalize mathematical papers.
 - AI-related consulting projects alongside product work.
 
@@ -51,4 +53,4 @@ Cornerhost (Sabren Enterprises, Inc.) | Nov 2001 – May 2016 · Atlanta Metro
 
 ## Selected Open Source & Elsewhere
 - [bex](https://github.com/tangentstorm/bex) · [jprez](https://github.com/tangentstorm/jprez) · [b4](https://github.com/tangentstorm/b4) · [pileUp](https://github.com/tangentstorm/pileup)
-- YouTube [@tangentstorm](https://www.youtube.com/@tangentstorm) / [@tangentstream](https://www.youtube.com/@tangentstream) · [ArrayCast guest](https://www.arraycast.com/episodes/episode40-michal-wallace) (Nov 2022) · [@tangentstorm](https://x.com/tangentstorm) on X
+- [@tangentstorm (YouTube)](https://www.youtube.com/@tangentstorm) · [@tangentstream](https://www.youtube.com/@tangentstream) · [ArrayCast guest (Nov 2022)](https://www.arraycast.com/episodes/episode40-michal-wallace) · [@tangentstorm on X](https://x.com/tangentstorm)
