@@ -1,0 +1,71 @@
+name: Resume
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - resume.yaml
+      - resume.typ
+      - build.py
+      - fonts/**
+      - .github/workflows/resume.yml
+  pull_request:
+    paths:
+      - resume.yaml
+      - resume.typ
+      - build.py
+      - fonts/**
+      - .github/workflows/resume.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Typst
+        env:
+          TYPST_VERSION: "0.15.1"
+        run: |
+          curl -fsSL -o typst.tar.xz \
+            "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz"
+          tar -xf typst.tar.xz
+          sudo mv typst-*/typst /usr/local/bin/typst
+          typst --version
+
+      - name: Install PyYAML
+        run: pip install --user pyyaml
+
+      - name: Build resume.md and resume.pdf
+        run: python3 build.py
+
+      - name: Upload workflow artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: |
+            resume.md
+            resume.pdf
+          if-no-files-found: error
+
+      # One evergreen release tag "resume" — assets are overwritten, not versioned.
+      - name: Publish to resume release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: resume
+          name: Resume
+          body: |
+            Latest built resume (updated automatically when `resume.yaml` / `resume.typ` change).
+
+            - [resume.pdf](https://github.com/${{ github.repository }}/releases/download/resume/resume.pdf)
+            - [resume.md](https://github.com/${{ github.repository }}/releases/download/resume/resume.md)
+          files: |
+            resume.md
+            resume.pdf
+          fail_on_unmatched_files: true
+          make_latest: false
