@@ -1,0 +1,157 @@
+name: Michal J. Wallace
+email: michal.wallace@gmail.com
+phone: "(678) 812-9126"
+website: tangentstorm.com
+website_url: http://tangentstorm.com
+github: tangentstorm
+location: Hicksville, NY
+
+summary: >
+  Software engineer with deep, hands-on experience in formal methods —
+  interactive theorem proving in Lean 4 across two book-scale formalization
+  projects — plus 20+ years building production web, backend, and
+  AI-integrated systems. Strengths in Lean 4, Python, JavaScript/TypeScript,
+  Rust, and array languages (K/J/APL).
+
+formal_method_note: >
+  Method: autoformalization — AI agents draft the Lean 4 proofs, the proof
+  assistant checks them, and failures feed back into the next attempt.
+  I orchestrate the loop and verify the results; the proofs below were
+  not written by hand.
+
+formal_methods:
+  - name: laptop
+    text: >
+      Lean 4 formalization of Eric Hehner's *A Practical Theory of Programming*.
+      Full-book blueprint rendered with Verso; all six optional sections plus
+      the §7.1.5 residual proved, `lake build` green.
+    links:
+      - label: repo
+        url: https://github.com/tangentproofs/laptop
+      - label: site
+        url: https://tangentproofs.github.io/laptop/
+
+  - name: conway-knots
+    text: >
+      Lean 4 formalization of Conway's classification of rational tangles.
+      362-item blueprint at 100% coverage of planned scope.
+      A verified knot enumeration program from the formalization is planned
+      future work.
+    links:
+      - label: repo
+        url: https://github.com/tangentproofs/conway-knots
+      - label: site
+        url: https://tangentproofs.github.io/conway-knots/
+
+  - name: bex
+    text: >
+      Rust crate for boolean expressions: expression trees and binary decision
+      diagrams, the core data structure of symbolic model checking.
+      SAT-solver and combinatorial-search background.
+    links:
+      - label: repo
+        url: https://github.com/tangentstorm/bex
+
+  - name: turyn
+    text: >
+      Search engine for Turyn-type sequences (four {+1,−1} sequences whose
+      combined aperiodic autocorrelations vanish), building blocks for Hadamard
+      matrices via the base-sequence → T-sequence → Goethals–Seidel pipeline;
+      long-term goal TT(56), yielding a Hadamard matrix of order 668.
+      SAT-driven pipeline (persistent CDCL solver, MDD boundary enumeration,
+      parallel workers), including an AI-created SAT solver.
+    links:
+      - label: repo
+        url: https://github.com/tangentproofs/turyn
+
+skills:
+  - label: Formal methods
+    items: Lean 4 (interactive theorem proving), Mathlib, binary decision diagrams, SAT solving
+  - label: Languages
+    items: Python, JavaScript/TypeScript, Rust, K, SQL, Smalltalk, Dart/Flutter
+  - label: Web & APIs
+    items: Vue.js, React, Node.js, HTMX, MCP / LLM tooling, API design
+  - label: Data
+    items: PostgreSQL, MySQL, SQLite, CouchDB
+  - label: Practices
+    items: TDD, Agile, scalable architecture, developer platforms
+
+experience:
+  - role: Founder
+    org: Minneron LLC
+    location: Hicksville, NY (Remote)
+    dates: Jan 2024 – Present
+    bullets:
+      - Formalizing mathematics in Lean 4 (see Formal Methods above).
+      - Building voiceover and animation software for video creators.
+      - AI-related consulting projects alongside product work.
+    links:
+      - label: minavo.app
+        url: https://minavo.app
+      - label: make.minneron.com
+        url: https://make.minneron.com/
+
+  - role: Senior Director, Software Development
+    org: Symphony AI
+    location: Remote
+    dates: Jun 2025 – Aug 2026
+    bullets:
+      - Added natural-language support via LLMs to the company’s data analysis platform.
+      - Built an MCP server so LLMs can integrate with that platform.
+      - Built a proxy to share and monitor AI API key usage.
+
+  - role: Senior Software Development Engineer
+    org: 1010data
+    location: NYC Metro (Hybrid)
+    dates: May 2016 – Jan 2024
+    bullets:
+      - Full-stack web and API development with K, Python, JavaScript, and in-house languages.
+      - Created a user-extensible API for building applications on the platform.
+
+  - role: Software Engineer (Contract)
+    org: Balfour
+    location: Dallas, TX
+    dates: Jan 2016 – May 2016
+    bullets:
+      - Desktop publishing for school yearbooks in Flask (Python) and AngularJS.
+
+  - role: Small Business Owner / Freelance Developer
+    org: Cornerhost (Sabren Enterprises, Inc.)
+    location: Atlanta Metro
+    dates: Nov 2001 – May 2016
+    bullets:
+      - Ran a web hosting company end-to-end (control panel, billing, monitoring) mostly in Python.
+      - Side contracts across Python, Perl, PHP, and Java (WordPress/Drupal, Android/App Engine, radio ad tooling).
+
+previously: >
+  Developer/Manager at StomperNet (Drupal/WordPress, Flash video library; introduced VCS and bug tracking).
+  Java/XP developer at Media Ocean (TV ad negotiation + EJB↔DHTML messaging).
+  Lead developer/analyst at Abel Solutions (Fortune 500 / NGO / state govt intranet apps).
+  Trainer/developer at Nuesoft; QA analyst at First Command.
+  Self-taught since middle school; AmeriCorps literacy tutor; UT Dallas Art & Performance + Cognitive Science.
+
+opensource:
+  - label: laptop
+    url: https://github.com/tangentproofs/laptop
+  - label: conway-knots
+    url: https://github.com/tangentproofs/conway-knots
+  - label: turyn
+    url: https://github.com/tangentproofs/turyn
+  - label: bex
+    url: https://github.com/tangentstorm/bex
+  - label: jprez
+    url: https://github.com/tangentstorm/jprez
+  - label: b4
+    url: https://github.com/tangentstorm/b4
+  - label: pileUp
+    url: https://github.com/tangentstorm/pileup
+
+elsewhere:
+  - label: "@tangentstorm (YouTube)"
+    url: https://www.youtube.com/@tangentstorm
+  - label: "@tangentstream"
+    url: https://www.youtube.com/@tangentstream
+  - label: ArrayCast guest (Nov 2022)
+    url: https://www.arraycast.com/episodes/episode40-michal-wallace
+  - label: "@tangentstorm on X"
+    url: https://x.com/tangentstorm
