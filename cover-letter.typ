@@ -37,7 +37,7 @@ A few of the things I've built:
 - #link("https://github.com/tangentstorm/bex")[bex], a Rust toolkit for Boolean expressions and binary decision diagrams, the core data structures of symbolic model checking.
 - #link("https://minavo.app")[Minavo], an audio/video creation tool with a live demo. I'm launching it through my company, Minneron LLC, and would happily keep it to a few hours a week alongside the right job.
 
-Most of my day-to-day coding now happens through AI agents: I run multi-agent workflows (Claude Code, Codex) with automated review gates, and I've built harnesses to evaluate their output. I also livestream about AI on my #link("https://www.youtube.com/@tangentstream")[tangentstream] channel.
+Most of my day-to-day coding now happens through AI agents: I run multi-agent workflows (Claude Code, Codex, Grok, Muse) with automated review gates, and I've built harnesses to evaluate their output. I also livestream about AI on my #link("https://www.youtube.com/@tangentstream")[tangentstream] channel.
 
 I'm based in Hicksville, NY, work remotely, and am a US citizen who doesn't require sponsorship. If this lines up with what your team is doing, I'd love to talk.
 
