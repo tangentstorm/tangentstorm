@@ -9,6 +9,12 @@
 #set text(font: "Libertinus Serif", size: 10.5pt, fill: ink)
 #set par(spacing: 0.7em, leading: 0.55em, justify: true)
 #show link: it => text(fill: accent-deep, it)
+#set list(
+  indent: 0em,
+  body-indent: 0.5em,
+  marker: text(fill: accent, size: 5pt)[●],
+  tight: true,
+)
 
 #let inter(..args) = text(font: ("Inter", "Liberation Sans"), ..args)
 
@@ -42,7 +48,8 @@ Most of my day-to-day coding now happens through AI agents: I run multi-agent wo
 I'm based in Hicksville, NY, work remotely, and am a US citizen who doesn't require sponsorship. If this lines up with what your team is doing, I'd love to talk.
 
 #v(0.8em)
-Best regards, Michal J. Wallace
+Best regards,\
+Michal J. Wallace
 
 #v(0.7em)
 #line(length: 100%, stroke: 0.5pt + accent)

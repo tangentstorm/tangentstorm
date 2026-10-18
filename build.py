@@ -97,6 +97,12 @@ TYP_PREAMBLE = """// GENERATED from cover-letter.md — do not edit by hand. Run
 #set text(font: "Libertinus Serif", size: 10.5pt, fill: ink)
 #set par(spacing: 0.7em, leading: 0.55em, justify: true)
 #show link: it => text(fill: accent-deep, it)
+#set list(
+  indent: 0em,
+  body-indent: 0.5em,
+  marker: text(fill: accent, size: 5pt)[●],
+  tight: true,
+)
 
 #let inter(..args) = text(font: ("Inter", "Liberation Sans"), ..args)
 
@@ -236,7 +242,8 @@ def md_to_typst_body(md: str) -> str:
             continue
         para = md_inline_to_typst(' '.join(l.strip() for l in b))
         if para.startswith('Best regards,'):
-            chunks.append('#v(0.8em)\n' + para)
+            # "Best regards, Name" -> signature on two lines, like a real letter
+            chunks.append('#v(0.8em)\nBest regards,\\\n' + para[len('Best regards,'):].strip())
         elif small:
             chunks.append('#text(size: 7pt, fill: muted)[%s]' % para)
         else:
