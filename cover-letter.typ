@@ -5,30 +5,30 @@
 #let accent = rgb("#8a4b2e")
 #let accent-deep = rgb("#6b3a24")
 
-#set page(paper: "us-letter", margin: (top: 0.75in, bottom: 0.7in, x: 1in))
-#set text(font: "Libertinus Serif", size: 10.5pt, fill: ink)
-#set par(spacing: 0.7em, leading: 0.55em, justify: true)
+#set page(paper: "us-letter", margin: (top: 0.8in, bottom: 0.75in, x: 1in))
+#set text(font: "Libertinus Serif", size: 11pt, fill: ink)
+#set par(spacing: 1em, leading: 0.58em, justify: true)
 #show link: it => text(fill: accent-deep, it)
 #set list(
   indent: 0em,
   body-indent: 0.5em,
-  marker: text(fill: accent, size: 5pt)[●],
-  tight: true,
+  marker: text(fill: accent, size: 5pt, baseline: -0.15em)[●],
+  spacing: 0.6em,
 )
 
 #let inter(..args) = text(font: ("Inter", "Liberation Sans"), ..args)
 
 #align(center)[
-  #inter(weight: "bold", size: 17pt, fill: ink, tracking: -0.5pt)[Michal J. Wallace] \
-  #v(0.1em)
+  #inter(weight: "bold", size: 20pt, fill: ink, tracking: -0.6pt)[Michal J. Wallace] \
+  #v(0.25em)
   #inter(size: 9pt, fill: muted)[Hicksville, NY (remote) · #link("mailto:michal.wallace@gmail.com")[michal.wallace\@gmail.com] · (678) 812-9126] \
   #inter(size: 9pt, fill: muted)[#link("https://tangentstorm.com")[tangentstorm.com] · #link("https://github.com/tangentstorm")[github.com/tangentstorm]]
 ]
-#v(0.5em)
+#v(0.6em)
 #line(length: 100%, stroke: 1pt + accent)
-#v(0.5em)
+#v(0.9em)
 
-Dear hiring manager,
+Dear Hiring Manager,
 
 I'm a generalist software engineer with 20+ years of experience, looking for an individual-contributor role in AI, developer relations, or formal methods.
 
@@ -36,9 +36,9 @@ Here's what I believe: AI will bring software creation to the average person, bu
 
 A few of the things I've built:
 
-- At 1010data, the #link("https://docs.1010data.com/DynamicAPI/")[Dynamic API], which lets client applications query the Insights Platform. It became the backbone of the company's ODBC driver, which hundreds of users relied on for every Tableau and Power BI dashboard, and it made it possible to run multiple queries in parallel; before, the system could only parallelize the parts of a single query. I also became the person people across the company asked about the system: I treated every question on Slack as a chance to learn more, and could often find answers that colleagues with years more tenure couldn't.
+- At 1010data, the #link("https://docs.1010data.com/DynamicAPI/")[Dynamic API], which lets client applications query the Insights Platform. It became the backbone of the company's ODBC driver, which hundreds of users relied on for every Tableau and Power BI dashboard. It also made it possible to run multiple queries in parallel, where before the system could only parallelize the parts of a single query. Along the way I became the person people across the company asked about the system: I treated every Slack question as a chance to learn more, and often found answers that colleagues with years more tenure couldn't.
 - After SymphonyAI acquired 1010data, R&D prototypes for new AI products, including an MCP server and a rate-limited, metered AI API gateway. I also helped my team get up to speed with AI tools.
-- #link("https://implish.org")[implish], a high-level language that combines array programming (APL, J, K) with the flexible dialects of Racket and Red. Long term, it's meant to support verified programs. The site has a live interpreter.
+- #link("https://implish.org")[implish], a high-level language that combines array programming (APL, J, K) with the flexible dialects of Racket and Red. In the long term, it's meant to support verified programs. The site has a live interpreter.
 - Two book-scale Lean 4 formalizations: Eric Hehner's #link("https://github.com/tangentproofs/laptop")[A Practical Theory of Programming] and #link("https://github.com/tangentproofs/conway-knots")[Conway's classification of rational tangles]. I did my earlier proofs by hand; these were mostly a matter of herding AI agents toward the goal.
 - #link("https://github.com/tangentstorm/bex")[bex], a Rust toolkit for Boolean expressions and binary decision diagrams, the core data structures of symbolic model checking.
 - #link("https://minavo.app")[Minavo], an audio/video creation tool with a live demo. I'm launching it through my company, Minneron LLC, and would happily keep it to a few hours a week alongside the right job.
@@ -47,17 +47,19 @@ Most of my day-to-day coding now happens through AI agents: I run multi-agent wo
 
 I'm based in Hicksville, NY, work remotely, and am a US citizen who doesn't require sponsorship. If this lines up with what your team is doing, I'd love to talk.
 
-#v(0.8em)
+#v(0.6em)
 Best regards,\
 Michal J. Wallace
 
-#v(0.7em)
+#v(1.2em)
 #line(length: 100%, stroke: 0.5pt + accent)
 #v(0.3em)
 
-#text(size: 8pt, weight: "bold", fill: muted)[Links mentioned]
+#inter(size: 7pt, weight: "bold", fill: accent-deep, tracking: 1.2pt)[LINKS MENTIONED]
 
-#text(size: 7pt, fill: muted)[
+#[
+#set text(size: 8pt, fill: muted)
+#set list(spacing: 0.35em)
 - Dynamic API — #link("https://docs.1010data.com/DynamicAPI/")[https://docs.1010data.com/DynamicAPI/]
 - implish — #link("https://implish.org")[https://implish.org]
 - A Practical Theory of Programming — #link("https://github.com/tangentproofs/laptop")[https://github.com/tangentproofs/laptop]
