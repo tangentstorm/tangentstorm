@@ -1,6 +1,4 @@
-// Cover letter — styled to match resume.typ.
-// Source of truth is cover-letter.md (his editable file); keep this in sync.
-// Rebuild with: python3 build.py
+// GENERATED from cover-letter.md — do not edit by hand. Run: python3 build.py
 
 #let ink = rgb("#121212")
 #let muted = rgb("#5c5c5c")
@@ -14,7 +12,6 @@
 
 #let inter(..args) = text(font: ("Inter", "Liberation Sans"), ..args)
 
-// Header
 #align(center)[
   #inter(weight: "bold", size: 17pt, fill: ink, tracking: -0.5pt)[Michal J. Wallace] \
   #v(0.1em)
@@ -45,12 +42,20 @@ Most of my day-to-day coding now happens through AI agents: I run multi-agent wo
 I'm based in Hicksville, NY, work remotely, and am a US citizen who doesn't require sponsorship. If this lines up with what your team is doing, I'd love to talk.
 
 #v(0.8em)
-Best regards,\
-Michal J. Wallace
+Best regards, Michal J. Wallace
 
 #v(0.7em)
 #line(length: 100%, stroke: 0.5pt + accent)
 #v(0.3em)
+
+#text(size: 8pt, weight: "bold", fill: muted)[Links mentioned]
+
 #text(size: 7pt, fill: muted)[
-  *Links mentioned:* Dynamic API — #link("https://docs.1010data.com/DynamicAPI/")[docs.1010data.com/DynamicAPI/] · implish — #link("https://implish.org")[implish.org] · A Practical Theory of Programming — #link("https://github.com/tangentproofs/laptop")[github.com/tangentproofs/laptop] · Conway's rational tangles — #link("https://github.com/tangentproofs/conway-knots")[github.com/tangentproofs/conway-knots] · bex — #link("https://github.com/tangentstorm/bex")[github.com/tangentstorm/bex] · Minavo — #link("https://minavo.app")[minavo.app] · tangentstream — #link("https://www.youtube.com/@tangentstream")[youtube.com/\@tangentstream] · tangentstorm.com — #link("https://tangentstorm.com")[tangentstorm.com] · github.com/tangentstorm — #link("https://github.com/tangentstorm")[github.com/tangentstorm]
+- Dynamic API — #link("https://docs.1010data.com/DynamicAPI/")[https://docs.1010data.com/DynamicAPI/]
+- implish — #link("https://implish.org")[https://implish.org]
+- A Practical Theory of Programming — #link("https://github.com/tangentproofs/laptop")[https://github.com/tangentproofs/laptop]
+- Conway's classification of rational tangles — #link("https://github.com/tangentproofs/conway-knots")[https://github.com/tangentproofs/conway-knots]
+- bex — #link("https://github.com/tangentstorm/bex")[https://github.com/tangentstorm/bex]
+- Minavo — #link("https://minavo.app")[https://minavo.app]
+- tangentstream — #link("https://www.youtube.com/@tangentstream")[https://www.youtube.com/\@tangentstream]
 ]

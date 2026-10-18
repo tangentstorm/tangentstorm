@@ -32,5 +32,3 @@ Best regards, Michal J. Wallace
 - bex — https://github.com/tangentstorm/bex
 - Minavo — https://minavo.app
 - tangentstream — https://www.youtube.com/@tangentstream
-- tangentstorm.com — https://tangentstorm.com
-- github.com/tangentstorm — https://github.com/tangentstorm
