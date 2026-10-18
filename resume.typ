@@ -1,3 +1,5 @@
+// Layout for resume.yaml. All content lives in the YAML; run: python3 build.py
+
 #let data = yaml("resume.yaml")
 
 #let ink = rgb("#121212")
@@ -8,160 +10,131 @@
 
 #set page(
   paper: "us-letter",
-  margin: (top: 0.4in, bottom: 0.36in, left: 0.4in, right: 0.4in),
+  margin: (top: 0.55in, bottom: 0.5in, x: 0.55in),
 )
-#set text(font: "Libertinus Serif", size: 9pt, fill: ink)
-#set par(leading: 0.36em)
+#set text(font: "Libertinus Serif", size: 10.6pt, fill: ink, hyphenate: false)
+#set par(leading: 0.5em, spacing: 0.6em)
 #show link: it => text(fill: accent-deep, it)
 
 #let inter(..args) = text(font: ("Inter", "Liberation Sans"), ..args)
-#let serif(..args) = text(font: "Libertinus Serif", ..args)
 
-// Label then copper rule UNDER
-#let rail-label(title) = {
-  // box() avoids paragraph line-box gap; small positive gap sits rule under baseline.
-  block(below: 0.2em, {
-    set block(spacing: 0pt)
-    box(inter(weight: "bold", size: 6.7pt, fill: accent-deep, tracking: 1.5pt, upper(title)))
-    v(0.18em)
-    line(length: 100%, stroke: 1pt + accent)
-  })
-}
+// One section-label style for both columns: small caps label over a hairline.
+#let section-label(title, above: 0em) = block(above: above, below: 0.55em, {
+  set block(spacing: 0pt)
+  box(inter(weight: "bold", size: 7.6pt, fill: accent-deep, tracking: 1.4pt, upper(title)))
+  v(0.3em)
+  line(length: 100%, stroke: 0.7pt + accent)
+})
 
-#let main-label(title) = {
-  block(below: 0.2em, {
-    set block(spacing: 0pt)
-    box(inter(weight: "bold", size: 7.1pt, fill: accent-deep, tracking: 1.6pt, upper(title)))
-    v(0.18em)
-    line(length: 1.15in, stroke: 1.1pt + accent)
-  })
-}
+#let rail-group(label, body) = block(below: 0.75em, {
+  set block(spacing: 0pt)
+  inter(weight: "semibold", size: 8.4pt, fill: ink, label)
+  v(0.28em)
+  body
+})
 
-#let date-col = 5.9em
-
-#let job(j, first: false) = {
-  // Tight internal rhythm makes title, metadata, and bullets read as one unit.
-  // Extra space above subsequent entries separates jobs without adding rules.
-  if not first { v(0.42em) }
+#let job(j, first: false) = block(above: if first { 0em } else { 1.45em }, breakable: false, {
+  // Role and dates share a baseline; org/location sits directly beneath.
+  set block(spacing: 0pt)
   grid(
-    columns: (1fr, date-col),
-    rows: (auto, auto),
-    column-gutter: 0.3em,
-    row-gutter: 0.08em,
-    inter(weight: "bold", size: 9pt, fill: ink, j.role),
-    align(right + top, inter(size: 7.3pt, fill: muted, j.dates)),
-    inter(
-      size: 7.6pt,
-      fill: muted,
-      j.org + if "location" in j and j.location != none { " · " + j.location } else { "" },
-    ),
-    [],
+    columns: (1fr, auto),
+    column-gutter: 1em,
+    inter(weight: "bold", size: 10.4pt, fill: ink, j.role),
+    inter(size: 8.6pt, fill: muted, j.dates),
   )
-  v(-0.16em)
+  v(0.32em)
+  inter(
+    size: 8.8pt,
+    fill: muted,
+    j.org + if "location" in j and j.location != none { "  ·  " + j.location } else { "" },
+  )
+  v(0.6em)
   set list(
-    indent: 0em,
-    body-indent: 0.38em,
-    marker: box(width: 0.38em, align(center, text(fill: accent, size: 4.4pt)[●])),
-    tight: true,
+    indent: 0.1em,
+    body-indent: 0.5em,
+    spacing: 0.5em,
+    marker: text(fill: accent, size: 5pt, baseline: -0.15em)[●],
   )
-  set text(font: "Libertinus Serif", size: 8.55pt, fill: ink)
-  set par(leading: 0.32em)
+  set par(leading: 0.45em)
   let links = if "links" in j { j.links } else { none }
-  let i = 0
-  for b in j.bullets {
+  for (i, b) in j.bullets.enumerate() {
     if i == 0 and links != none {
-      let bits = links.map(l => link(l.url, l.label))
-      list.item[
-        #serif(size: 8.55pt)[#b]
-        #serif(fill: muted, size: 8.1pt)[ (]
-        #bits.join([, ])
-        #serif(fill: muted, size: 8.1pt)[)]
-      ]
+      list.item[#b #text(fill: muted)[(#links.map(l => link(l.url, l.label)).join[, ])]]
     } else {
-      list.item[#serif(size: 8.55pt)[#b]]
+      list.item(b)
     }
-    i += 1
   }
-}
+})
 
 #let left-rail = {
-  rail-label("Contact")
-  inter(size: 7.25pt, fill: ink)[
-    #link("mailto:" + data.email)[#data.email.replace("@", "\@")] \
-    #data.phone
-    #v(0.18em)
-    #link(data.website_url)[#data.website] \
+  set par(leading: 0.42em, spacing: 0pt)
+
+  section-label("Contact")
+  set par(leading: 0.55em)
+  block(below: 0.7em, inter(size: 8.5pt, fill: ink)[
+    #link("mailto:" + data.email, data.email) \
+    #data.phone \
+    #data.location
+  ])
+  inter(size: 8.5pt)[
+    #link(data.website_url, data.website) \
     #link("https://github.com/" + data.github)[github.com/#data.github]
   ]
 
-  v(0.42em)
-  rail-label("Skills")
+  section-label("Skills", above: 1.8em)
   for s in data.skills {
-    inter(weight: "bold", size: 7pt, fill: ink, s.label)
-    v(0.05em)
-    inter(size: 7.15pt, fill: muted, s.items)
-    v(0.2em)
+    rail-group(s.label, inter(size: 8.4pt, fill: muted, s.items))
   }
 
-  v(0.08em)
-  rail-label("Code")
-  inter(size: 7.3pt)[
-    #data.opensource.map(p => link(p.url, p.label)).join([\ ])
-  ]
+  section-label("Open Source", above: 1.4em)
+  inter(size: 8.5pt)[#data.opensource.map(p => link(p.url, p.label)).join(linebreak())]
 
-  v(0.36em)
-  rail-label("Elsewhere")
-  inter(size: 7.05pt)[
-    #data.elsewhere.map(e => link(e.url, e.label)).join([\ ])
-  ]
+  section-label("Elsewhere", above: 1.8em)
+  inter(size: 8.5pt)[#data.elsewhere.map(e => link(e.url, e.label)).join(linebreak())]
 }
 
 #let main-col = {
-  main-label("Summary")
-  set par(leading: 0.4em)
-  serif(size: 8.85pt, data.summary.trim())
+  section-label("Summary")
+  data.summary.trim()
 
-  v(0.26em)
-  main-label("Experience")
+  section-label("Experience", above: 1.8em)
   for (i, j) in data.experience.enumerate() {
     job(j, first: i == 0)
   }
 
-  v(0.26em)
+  v(1.7em)
   block(
     width: 100%,
-    inset: (left: 0.4em, y: 0.14em, right: 0.06em),
-    stroke: (left: 1.65pt + accent),
+    inset: (left: 0.7em, y: 0.25em),
+    stroke: (left: 1.6pt + accent),
     {
-      inter(weight: "bold", size: 6.7pt, fill: accent-deep, tracking: 1.1pt)[PREVIOUSLY]
-      v(0.06em)
-      serif(size: 7.35pt, fill: muted, data.previously.trim())
+      set block(spacing: 0pt)
+      inter(weight: "bold", size: 7.6pt, fill: accent-deep, tracking: 1.4pt)[PREVIOUSLY]
+      v(0.45em)
+      text(size: 9.2pt, fill: muted, par(leading: 0.48em, data.previously.trim()))
     },
   )
 }
 
-// Header
-#inter(weight: "bold", size: 24pt, fill: ink, tracking: -0.9pt, data.name)
-#v(0.12em)
-#line(length: 100%, stroke: 1.3pt + ink)
-#v(0.16em)
-#grid(
-  columns: (1fr, auto),
-  inter(size: 7.8pt, fill: muted)[Principal engineer · founder · AI systems],
-  inter(size: 7.4pt, fill: muted, data.location),
-)
-#v(0.32em)
+// Header: name and tagline over a full-width rule.
+#block(below: 0pt, {
+  set block(spacing: 0pt)
+  inter(weight: "bold", size: 28pt, fill: ink, tracking: -0.9pt, data.name)
+  v(0.5em)
+  inter(size: 9.8pt, fill: muted, tracking: 0.2pt, data.tagline)
+  v(0.7em)
+  line(length: 100%, stroke: 1.2pt + ink)
+})
+#v(0.3in)
 
-// Table gives equal-height cells so cream rail paints full column
+// A table gives equal-height cells, so the cream rail paints the full column.
 #table(
-  columns: (1.52in, 1fr),
-  column-gutter: 0.34in,
+  columns: (1.85in, 1fr),
+  column-gutter: 0.3in,
   stroke: none,
   inset: 0pt,
   align: top,
   fill: (col, _) => if col == 0 { soft } else { none },
-  // left rail
-  pad(x: 0.34em, y: 0.36em, left-rail),
-  // main
+  pad(x: 0.75em, y: 0.9em, left-rail),
   main-col,
 )

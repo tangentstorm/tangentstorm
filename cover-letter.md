@@ -1,6 +1,6 @@
 Michal J. Wallace Hicksville, NY (remote) · michal.wallace@gmail.com · (678) 812-9126 tangentstorm.com · github.com/tangentstorm
 
-Dear hiring manager,
+Dear Hiring Manager,
 
 I'm a generalist software engineer with 20+ years of experience, looking for an individual-contributor role in AI, developer relations, or formal methods.
 
@@ -8,9 +8,9 @@ Here's what I believe: AI will bring software creation to the average person, bu
 
 A few of the things I've built:
 
-- At 1010data, the [Dynamic API](https://docs.1010data.com/DynamicAPI/), which lets client applications query the Insights Platform. It became the backbone of the company's ODBC driver, which hundreds of users relied on for every Tableau and Power BI dashboard, and it made it possible to run multiple queries in parallel; before, the system could only parallelize the parts of a single query. I also became the person people across the company asked about the system: I treated every question on Slack as a chance to learn more, and could often find answers that colleagues with years more tenure couldn't.
+- At 1010data, the [Dynamic API](https://docs.1010data.com/DynamicAPI/), which lets client applications query the Insights Platform. It became the backbone of the company's ODBC driver, which hundreds of users relied on for every Tableau and Power BI dashboard. It also made it possible to run multiple queries in parallel, where before the system could only parallelize the parts of a single query. Along the way I became the person people across the company asked about the system: I treated every Slack question as a chance to learn more, and often found answers that colleagues with years more tenure couldn't.
 - After SymphonyAI acquired 1010data, R&D prototypes for new AI products, including an MCP server and a rate-limited, metered AI API gateway. I also helped my team get up to speed with AI tools.
-- [implish](https://implish.org), a high-level language that combines array programming (APL, J, K) with the flexible dialects of Racket and Red. Long term, it's meant to support verified programs. The site has a live interpreter.
+- [implish](https://implish.org), a high-level language that combines array programming (APL, J, K) with the flexible dialects of Racket and Red. In the long term, it's meant to support verified programs. The site has a live interpreter.
 - Two book-scale Lean 4 formalizations: Eric Hehner's [A Practical Theory of Programming](https://github.com/tangentproofs/laptop) and [Conway's classification of rational tangles](https://github.com/tangentproofs/conway-knots). I did my earlier proofs by hand; these were mostly a matter of herding AI agents toward the goal.
 - [bex](https://github.com/tangentstorm/bex), a Rust toolkit for Boolean expressions and binary decision diagrams, the core data structures of symbolic model checking.
 - [Minavo](https://minavo.app), an audio/video creation tool with a live demo. I'm launching it through my company, Minneron LLC, and would happily keep it to a few hours a week alongside the right job.

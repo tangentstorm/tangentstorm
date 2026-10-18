@@ -5,14 +5,15 @@ website: tangentstorm.com
 website_url: http://tangentstorm.com
 github: tangentstorm
 location: Hicksville, NY · Remote
+tagline: Principal engineer · founder · AI systems
 
 summary: >
-  Principal / senior engineering leader with 20+ years building web, backend,
+  Principal/senior engineering leader with 20+ years building web, backend,
   and AI-integrated systems. Recently led LLM features for a data analysis
-  platform (MCP server, key-usage proxy, natural-language querying) and now
-  shipping voiceover/animation tools plus AI agent workflows as founder of
-  Minneron. Strengths in Python, JavaScript/TypeScript, Rust, and array
-  languages (K/J/APL).
+  platform (natural-language querying, an MCP server, an API-key usage proxy);
+  now building voiceover and animation tools and running AI agent workflows
+  as founder of Minneron. Strengths in Python, JavaScript/TypeScript, Rust,
+  and array languages (K, J, APL).
 
 skills:
   - label: Languages
@@ -32,7 +33,7 @@ experience:
     bullets:
       - Building voiceover and animation software for video creators.
       - Running a swarm of AI agents to formalize mathematical papers.
-      - AI-related consulting projects alongside product work.
+      - Taking on AI-related consulting projects alongside product work.
     links:
       - label: make.minneron.com
         url: https://make.minneron.com/
@@ -40,20 +41,20 @@ experience:
         url: https://minavo.app
 
   - role: Senior Director, Software Development
-    org: Symphony AI
+    org: SymphonyAI
     location: Remote
     dates: Jun 2025 – Aug 2026
     bullets:
-      - Added natural-language support via LLMs to the company’s data analysis platform.
-      - Built an MCP server so LLMs can integrate with that platform.
-      - Built a proxy to share and monitor AI API key usage.
+      - Added LLM-powered natural-language support to the company’s data analysis platform.
+      - Built an MCP server that lets LLMs integrate with the platform.
+      - Built a proxy for sharing AI API keys and monitoring their usage.
 
   - role: Senior Software Development Engineer
     org: 1010data
     location: NYC Metro (Hybrid)
     dates: May 2016 – Jan 2024
     bullets:
-      - Full-stack web and API development with K, Python, JavaScript, and in-house languages.
+      - Developed full-stack web applications and APIs in K, Python, JavaScript, and in-house languages.
       - Created a user-extensible API for building applications on the platform.
 
   - role: Software Engineer (Contract)
@@ -61,22 +62,22 @@ experience:
     location: Dallas, TX
     dates: Jan 2016 – May 2016
     bullets:
-      - Desktop publishing for school yearbooks in Flask (Python) and AngularJS.
+      - Developed yearbook desktop-publishing software with Flask (Python) and AngularJS.
 
   - role: Small Business Owner / Freelance Developer
     org: Cornerhost (Sabren Enterprises, Inc.)
     location: Atlanta Metro
     dates: Nov 2001 – May 2016
     bullets:
-      - Ran a web hosting company end-to-end (control panel, billing, monitoring) mostly in Python.
-      - Side contracts across Python, Perl, PHP, and Java (WordPress/Drupal, Android/App Engine, radio ad tooling).
+      - Ran a web hosting company end to end, including its control panel, billing, and monitoring, mostly in Python.
+      - Took side contracts in Python, Perl, PHP, and Java (WordPress/Drupal, Android/App Engine, radio ad tooling).
 
 previously: >
   Developer/Manager at StomperNet (Drupal/WordPress, Flash video library; introduced VCS and bug tracking).
-  Java/XP developer at Media Ocean (TV ad negotiation + EJB↔DHTML messaging).
-  Lead developer/analyst at Abel Solutions (Fortune 500 / NGO / state govt intranet apps).
+  Java/XP developer at Media Ocean (TV ad negotiation; EJB↔DHTML messaging).
+  Lead developer/analyst at Abel Solutions (intranet apps for Fortune 500, NGO, and state government clients).
   Trainer/developer at Nuesoft; QA analyst at First Command.
-  Self-taught since middle school; AmeriCorps literacy tutor; UT Dallas Art & Performance + Cognitive Science.
+  Self-taught since middle school; AmeriCorps literacy tutor; studied Art & Performance and Cognitive Science at UT Dallas.
 
 opensource:
   - label: bex
@@ -91,7 +92,7 @@ opensource:
 elsewhere:
   - label: "@tangentstorm (YouTube)"
     url: https://www.youtube.com/@tangentstorm
-  - label: "@tangentstream"
+  - label: "@tangentstream (YouTube)"
     url: https://www.youtube.com/@tangentstream
   - label: ArrayCast guest (Nov 2022)
     url: https://www.arraycast.com/episodes/episode40-michal-wallace
