@@ -72,10 +72,18 @@ def write_pdf() -> None:
     print(f"wrote {ROOT / 'resume.pdf'}")
 
 
+def write_cover_letter_pdf() -> None:
+    subprocess.check_call(
+        ["typst", "compile", "--font-path", str(ROOT / "fonts"), str(ROOT / "cover-letter.typ"), str(ROOT / "cover-letter.pdf")],
+    )
+    print(f"wrote {ROOT / 'cover-letter.pdf'}")
+
+
 def main() -> None:
     data = load()
     write_markdown(data)
     write_pdf()
+    write_cover_letter_pdf()
 
 
 if __name__ == "__main__":
