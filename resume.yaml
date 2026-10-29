@@ -31,6 +31,8 @@ experience:
     location: Hicksville, NY (Remote)
     dates: Jan 2024 – Present
     bullets:
+      - Directed parallel agentic development of tangentcode/platform — about 144 distinct PRs merged in seven weeks (~18/week, peaking at 29 in a day), coordinating Claude Code agents and custom bots with Codex reviewing 78 PRs; median PR cycle time about 12 hours.
+      - Publishing Lean formalizations and informalizations at tangentproofs.github.io — reading Lean proofs back into plain English, including proofs by others.
       - Building voiceover and animation software for video creators.
       - Running a swarm of AI agents to formalize mathematical papers.
       - Taking on AI-related consulting projects alongside product work.
@@ -39,6 +41,8 @@ experience:
         url: https://make.minneron.com/
       - label: minavo.app
         url: https://minavo.app
+      - label: tangentproofs.github.io
+        url: https://tangentproofs.github.io
 
   - role: Senior Director, Software Development
     org: SymphonyAI
@@ -88,6 +92,8 @@ opensource:
     url: https://github.com/tangentstorm/b4
   - label: pileUp
     url: https://github.com/tangentstorm/pileup
+  - label: tangentproofs
+    url: https://tangentproofs.github.io
 
 elsewhere:
   - label: "@tangentstorm (YouTube)"

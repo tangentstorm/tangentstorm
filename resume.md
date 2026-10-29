@@ -23,6 +23,8 @@ Principal/senior engineering leader with 20+ years building web, backend, and AI
 ### Founder
 Minneron LLC · Hicksville, NY (Remote) · Jan 2024 – Present
 
+- Directed parallel agentic development of tangentcode/platform — about 144 distinct PRs merged in seven weeks (~18/week, peaking at 29 in a day), coordinating Claude Code agents and custom bots with Codex reviewing 78 PRs; median PR cycle time about 12 hours.
+- Publishing Lean formalizations and informalizations at [tangentproofs.github.io](https://tangentproofs.github.io) — reading Lean proofs back into plain English, including proofs by others.
 - Building voiceover and animation software for video creators.
 - Running a swarm of AI agents to formalize mathematical papers.
 - Taking on AI-related consulting projects alongside product work.
@@ -56,5 +58,5 @@ Developer/Manager at StomperNet (Drupal/WordPress, Flash video library; introduc
 
 ## Open Source & Elsewhere
 
-- **Open source:** [bex](https://github.com/tangentstorm/bex) · [jprez](https://github.com/tangentstorm/jprez) · [b4](https://github.com/tangentstorm/b4) · [pileUp](https://github.com/tangentstorm/pileup)
+- **Open source:** [bex](https://github.com/tangentstorm/bex) · [jprez](https://github.com/tangentstorm/jprez) · [b4](https://github.com/tangentstorm/b4) · [pileUp](https://github.com/tangentstorm/pileup) · [tangentproofs](https://tangentproofs.github.io)
 - **Elsewhere:** [@tangentstorm (YouTube)](https://www.youtube.com/@tangentstorm) · [@tangentstream (YouTube)](https://www.youtube.com/@tangentstream) · [ArrayCast guest (Nov 2022)](https://www.arraycast.com/episodes/episode40-michal-wallace) · [@tangentstorm on X](https://x.com/tangentstorm)
